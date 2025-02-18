@@ -12,5 +12,3 @@ node_modules
 # Ignore all PDF files
 *.pdf
 
-# Ignore uploaded files directory (if applicable)
-uploads/
