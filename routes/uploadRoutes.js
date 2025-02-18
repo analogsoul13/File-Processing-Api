@@ -18,7 +18,6 @@ router.post("/upload", upload.single("file"), async (req, res) => {
 
         // Image resizing
         if (req.file.mimetype.startsWith("image/")) {
-
             const resizedDir = "uploads/resized";
             if (!fs.existsSync(resizedDir)) {
                 fs.mkdirSync(resizedDir, { recursive: true });
